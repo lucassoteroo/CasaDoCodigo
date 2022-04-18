@@ -1,3 +1,4 @@
+@import './rem-calc.scss';
 * {
     margin: 0;
     padding: 0;
@@ -55,4 +56,19 @@ table {
 input {
     outline: none;
     font-weight: 100;
+}
+
+.mat-button {
+    width: rem-calc(250);
+}
+
+.mat-menu-content {
+    background-color: var(--fundo-botao);
+    width: rem-calc(225);
+}
+
+.mat-menu-item {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0 auto;
 }
