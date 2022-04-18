@@ -1,0 +1,22 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+:host {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        &__area {
+            padding: rem-calc(10);
+            color: var(--primary-color);
+            font: {
+                size: rem-calc(17);
+                weight: 600;
+            }
+            &:hover {
+                background-color: var(--fundo-botao);
+            }
+        }
+    }
+}

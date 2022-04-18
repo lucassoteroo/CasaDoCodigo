@@ -1,0 +1,39 @@
+<section class="menu">
+    <nav *ngFor="let item of getSection">
+        <ul *ngIf="item.area == 'front-end'">
+            <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item class="menu__item">{{item.section1}}</button>
+                <button mat-menu-item class="menu__item">{{item.section2}}</button>
+                <button mat-menu-item class="menu__item">{{item.section3}}</button>
+            </mat-menu>
+        </ul>
+        <ul *ngIf="item.area == 'mobile'">
+            <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item class="menu__item">{{item.section1}}</button>
+                <button mat-menu-item class="menu__item">{{item.section2}}</button>
+                <button mat-menu-item class="menu__item">{{item.section3}}</button>
+                <button mat-menu-item class="menu__item">{{item.section4}}</button>
+            </mat-menu>
+        </ul>
+        <ul *ngIf="item.area == 'infraestrutura'">
+            <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item class="menu__item">{{item.section1}}</button>
+                <button mat-menu-item class="menu__item">{{item.section2}}</button>
+                <button mat-menu-item class="menu__item">{{item.section3}}</button>
+            </mat-menu>
+        </ul>
+        <ul *ngIf="item.area == 'business'">
+            <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item class="menu__item">{{item.section1}}</button>
+                <button mat-menu-item class="menu__item">{{item.section2}}</button>
+                <button mat-menu-item class="menu__item">{{item.section3}}</button>
+                <button mat-menu-item class="menu__item">{{item.section4}}</button>
+                <button mat-menu-item class="menu__item">{{item.section5}}</button>
+            </mat-menu>
+        </ul>
+    </nav>
+</section>

@@ -7,12 +7,14 @@ import { RoutingModule } from './routing.module';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 import { SharedModule } from '../shared/shared.module';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     DetailsComponent,
+    ListComponent
   ],
   imports: [
     CommonModule,
