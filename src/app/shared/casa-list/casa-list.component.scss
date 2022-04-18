@@ -1,0 +1,85 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+$padding: rem-calc(20);
+:host {
+    .containerSecao {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--fundo-titulo-secao);
+        background-image: url(../../../assets/image/sections/fundo-secao.svg);
+        border-radius: 0rem 0rem .5rem .5rem;
+        padding: rem-calc(20) rem-calc(25);
+        &__title {
+            color: var(--branco);
+            padding-left: rem-calc(20);
+            align-self: center;
+            text-transform: capitalize;
+            font: {
+                size: rem-calc(20);
+                weight: 600;
+            }
+        }
+        &__image {
+            width: rem-calc(40);
+        }
+    }
+    .search {
+        margin: rem-calc(25) 0 rem-calc(10) 0
+    }
+    .listagem {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: rem-calc(30) rem-calc(90);
+        .casa {
+            &__acesso {
+                position: relative;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                transition: all ease-in .5s;
+                align-items: center;
+                cursor: pointer;
+                margin-bottom: rem-calc(30);
+                &:hover {
+                    .casa__btn {
+                        text-decoration: none;
+                        background-color: var(--secondary-color);
+                        color: var(--branco);
+                        width: rem-calc(187);
+                        bottom: 0%;
+                        z-index: 2;
+                        font: {
+                            size: rem-calc(15);
+                            weight: 600;
+                        }
+                        padding: {
+                            top: rem-calc(7.5);
+                            bottom: rem-calc(7.5);
+                        }
+                        ;
+                    }
+                    img {
+                        box-shadow: 0px 0px 3px #000;
+                    }
+                }
+            }
+            &__btn {
+                color: transparent;
+                background-color: transparent;
+                display: block;
+                position: absolute;
+                z-index: 1;
+            }
+            &__image {
+                height: rem-calc(250);
+                width: rem-calc(185);
+                img {
+                    width: rem-calc(155);
+                }
+            }
+            &:hover {
+                top: -5px;
+            }
+        }
+    }
+}

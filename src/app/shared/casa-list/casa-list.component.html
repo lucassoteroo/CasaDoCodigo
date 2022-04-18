@@ -1,0 +1,19 @@
+<div class="containerSecao" *ngFor="let item of getSection">
+    <img [src]="item.imageSectionUrl" alt="" class="containerSecao__image">
+    <h2 *ngIf="item.area == 'front-end'" class="containerSecao__title">
+        livros de {{item.area}}
+    </h2>
+</div>
+<div class="search">
+    <casa-search (emmitSearch)="getSearch($event)"></casa-search>
+</div>
+<section class="listagem">
+    <a class="casa" [routerLink]="['details', livro.id]" *ngFor="let livro of getBooks">
+        <div class="container">
+            <section class="casa__acesso">
+                <img [src]="livro.bigImageUrl" alt="{{livro.title}}" class="casa__image">
+                <a class="casa__btn">Comprar</a>
+            </section>
+        </div>
+    </a>
+</section>

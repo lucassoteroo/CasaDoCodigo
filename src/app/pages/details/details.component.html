@@ -1,0 +1,52 @@
+<casa-header></casa-header>
+<main *ngFor="let item of getElementsBook">
+    <section class="showcase">
+        <div class="collectionImages">
+            <img [src]="item.middleImageUrl" alt="" class="collectionImages__middle">
+            <img [src]="item.smallImageUrl" alt="" class="collectionImages__small">
+            <img [src]="item.bigImageUrl" alt="" class="collectionImages__big">
+        </div>
+        <div class="shelf">
+            <h2 class="shelf__titleBook">{{item.title}}</h2>
+            <h4 class="shelf__uponBook">{{item.upon}}</h4>
+            <p class="shelf__writerBook">{{item.writer}}</p>
+            <div class="prices">
+                <div class="prices__onShelfEbook">
+                    <p class="prices__type">Ebook</p>
+                    <p class="prices__price">R$ {{item.priceEbook}}</p>
+                    <a class="prices__buy">Botão</a>
+                </div>
+                <div class="prices__onShelfPrinted">
+                    <p class="prices__type">Impresso</p>
+                    <p class="prices__price">R$ {{item.pricePrinted}}</p>
+                    <a class="prices__buy">Botão</a>
+                </div>
+                <div class="prices__onShelfPackage">
+                    <p class="prices__type">Ebook + Impresso</p>
+                    <p class="prices__price">R$ {{item.pricePackage}}</p>
+                    <a class="prices__buy">Botão</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="aboutWriter">
+        <h4 class="aboutWriter__title">Autor</h4>
+        <div class="aboutWriter__container">
+            <img [src]="item.writerImg" alt="" class="aboutWriter__image">
+            <div class="aboutWriter__item">
+                <p class="aboutWriter__name">{{item.writer}}</p>
+                <p class="aboutWriter__about">{{item.aboutWriter}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <h4 class="description__title">Conteúdo</h4>
+        <p class="description__book">{{item.description}}</p>
+    </div>
+    <div class="aboutBook">
+        <h4 class="aboutBook__title">Dados do produto</h4>
+        <p class="aboutBook__pages"><b>Número de páginas: </b>{{item.numPages}}</p>
+        <p class="aboutBook__datePublish"><b>Data de publicação: </b>{{item.datePubli}}</p>
+    </div>
+</main>
+<casa-footer></casa-footer>
