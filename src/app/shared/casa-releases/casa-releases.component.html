@@ -1,0 +1,33 @@
+<section *ngFor="let item of getRelease">
+    <div class="releases">
+        <div class="releases__item">
+            <div class="releases__containerImage">
+                <img [src]="item.book1" alt="" class="releases__imageMiddle">
+                <img [src]="item.book1" alt="" class="releases__imageSmall">
+                <img [src]="item.book1" alt="" class="releases__imageBig">
+            </div>
+            <div class="releases__acessPrimary">
+                <p class="releases__text">{{item.aboutBook1}}</p>
+                <div class="releases__buttonItem">
+                    <button class="releases__button">Mais Detalhes</button>
+                </div>
+            </div>
+        </div>
+        <div class="releases__item">
+            <div class="releases__acess">
+                <img [src]="item.book2" alt="" class="releases__image">
+                <div class="releases__buttonItem">
+                    <button class="releases__button">Mais Detalhes</button>
+                </div>
+            </div>
+        </div>
+        <div class="releases__item">
+            <div class="releases__acess">
+                <img [src]="item.book3" alt="" class="releases__image">
+                <div class="releases__buttonItem">
+                    <button class="releases__button">Mais Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

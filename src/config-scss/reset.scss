@@ -58,13 +58,22 @@ input {
     font-weight: 100;
 }
 
+// sobrescrevendo métodos do material
 .mat-button {
     width: rem-calc(250);
 }
 
+.mat-button-focus-overlay {
+    background: none;
+}
+
 .mat-menu-content {
     background-color: var(--fundo-botao);
-    width: rem-calc(225);
+    width: rem-calc(252);
+}
+
+.cdk-overlay-container {
+    top: 21px;
 }
 
 .mat-menu-item {
