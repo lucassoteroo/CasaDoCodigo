@@ -1,0 +1,37 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+:host {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        li {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: rem-calc(15);
+            &:hover {
+                background-color: var(--fundo-botao);
+            }
+        }
+        &__seta {
+            margin: 0 auto;
+            width: rem-calc(20);
+        }
+        &__area {
+            padding: {
+                top: rem-calc(10);
+                right: rem-calc(10);
+                left: rem-calc(10);
+                bottom: rem-calc(5);
+            }
+            color: var(--primary-color);
+            text-transform: capitalize;
+            font: {
+                size: rem-calc(20);
+                weight: 600;
+            }
+        }
+    }
+}

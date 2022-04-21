@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+
 // Service
 import { DbService } from '../../database/casaDoCodigo-db.service'
 import { Db } from '../../database/casaDoCodigo-db'
@@ -19,7 +20,7 @@ export class CasaListComponent implements OnInit {
   private setSection: DbSections[] = [] 
   public getSection: DbSections[] = []
 
-  constructor(private bookService: DbService, private getService: DbSectionsService) { }
+  constructor(private activatedRoute: ActivatedRoute, private bookService: DbService, private getService: DbSectionsService) { }
 
   ngOnInit(): void {
     this.setBooks = this.bookService.retriveAll()

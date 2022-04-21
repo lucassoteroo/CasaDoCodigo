@@ -20,6 +20,9 @@
 }
 
 :host {
+    .containerSecao__image2 {
+        display: none;
+    }
     .showcase {
         max-width: rem-calc(1200);
         margin: rem-calc(50) auto 0 auto;
