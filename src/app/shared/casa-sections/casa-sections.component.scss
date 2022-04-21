@@ -1,0 +1,131 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+:host {
+    .sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: min-content;
+        margin: 0 auto;
+        border: 2px solid var(--borda-secao);
+        margin-bottom: rem-calc(70);
+        &__item {
+            text-align: center;
+            width: 198px;
+            height: 160px;
+            padding: rem-calc(10);
+            border: {
+                left: .5px solid var(--borda-secao-item);
+                right: .5px solid var(--borda-secao-item);
+            }
+        }
+        &__acess {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            padding-bottom: rem-calc(10);
+        }
+        &__area {
+            font-size: rem-calc(14);
+            margin-bottom: 10px;
+            p {
+                text-transform: uppercase;
+                font: {
+                    size: rem-calc(18);
+                    weight: 600
+                }
+            }
+        }
+        &__text {
+            color: var(--borda-texto);
+            opacity: .9;
+            font-size: rem-calc(14);
+        }
+        &__program {
+            &:hover {
+                background-color: #00c86f;
+                height: 5px;
+                left: 12px;
+                right: 12px;
+            }
+        }
+        .programacao {
+            color: #00c86f;
+            img {
+                background-color: #00c86f;
+                width: 30px;
+                height: 30px;
+                margin-top: 25px;
+            }
+        }
+        &__mobile {
+            &:hover {
+                background-color: #ffba05;
+                height: 5px;
+                left: 12px;
+                right: 12px;
+            }
+        }
+        .mobile {
+            color: #ffba05;
+            img {
+                background-color: #ffba05;
+                width: 30px;
+                height: 30px;
+                margin-top: 25px;
+            }
+        }
+        .front-end {
+            color: #6bd1ff;
+            img {
+                background-color: #6bd1ff;
+                width: 30px;
+                height: 30px;
+                margin-top: 25px;
+            }
+        }
+        &__front-end {
+            &:hover {
+                background-color: #6bd1ff;
+                height: 5px;
+                left: 12px;
+                right: 12px;
+            }
+        }
+        .infraestrutura {
+            color: #f16165;
+            img {
+                background-color: #f16165;
+                width: 30px;
+                height: 30px;
+                margin-top: 25px;
+            }
+        }
+        &__infraestrutura {
+            &:hover {
+                background-color: #f16165;
+                height: 5px;
+                left: 12px;
+                right: 12px;
+            }
+        }
+        .business {
+            color: #ff8c2a;
+            img {
+                background-color: #ff8c2a;
+                width: 30px;
+                height: 30px;
+                margin-top: 25px;
+            }
+        }
+        &__business {
+            &:hover {
+                background-color: #ff8c2a;
+                height: 5px;
+                left: 12px;
+                right: 12px;
+            }
+        }
+    }
+}

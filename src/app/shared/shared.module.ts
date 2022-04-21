@@ -31,6 +31,7 @@ import { CasaReleasesComponent } from './casa-releases/casa-releases.component';
     CasaFooterComponent,
     CasaMenuComponent,
     CasaReleasesComponent
+
   ],
   imports: [
     CommonModule,
