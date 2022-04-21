@@ -12,6 +12,7 @@ import { CasaListComponent } from './casa-list/casa-list.component';
 import { CasaFooterComponent } from './casa-footer/casa-footer.component';
 import { CasaMenuComponent } from './casa-menu/casa-menu.component';
 import { CasaReleasesComponent } from './casa-releases/casa-releases.component';
+import { CasaSectionsComponent } from './casa-sections/casa-sections.component';
 
 
 
@@ -23,6 +24,7 @@ import { CasaReleasesComponent } from './casa-releases/casa-releases.component';
     CasaFooterComponent,
     CasaMenuComponent,
     CasaReleasesComponent,
+    CasaSectionsComponent
   ],
   exports: [
     CasaHeaderComponent,
@@ -30,7 +32,8 @@ import { CasaReleasesComponent } from './casa-releases/casa-releases.component';
     CasaListComponent,
     CasaFooterComponent,
     CasaMenuComponent,
-    CasaReleasesComponent
+    CasaReleasesComponent,
+    CasaSectionsComponent
 
   ],
   imports: [

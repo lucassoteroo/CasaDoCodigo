@@ -14,7 +14,7 @@ export class DbSectionsService {
 let Secoes: DbSections[] = [
     {
         area: 'front-end',
-        imageSectionUrl: 'assets/image/sections/secao-front-end.svg',
+        imageSectionUrl: 'assets/image/sections/icon-front-end.svg',
         section1: 'HTML e CSS',
         section2: 'Javascript',
         section3: 'Todos',
@@ -23,7 +23,7 @@ let Secoes: DbSections[] = [
     },
     {
         area: 'mobile',
-        imageSectionUrl: 'assets/image/sections/secao-mobile-branco.svg',
+        imageSectionUrl: 'assets/image/sections/icon-mobile.svg',
         section1: 'iOS',
         section2: 'Android',
         section3: 'Multiplataforma',
@@ -32,7 +32,7 @@ let Secoes: DbSections[] = [
     },
     {
         area: 'infraestrutura',
-        imageSectionUrl: 'assets/image/sections/secao-infraestrutura-branco.svg',
+        imageSectionUrl: 'assets/image/sections/icon-infraestrutura.svg',
         section1: 'Web',
         section2: 'Dados',
         section3: 'Todos',
@@ -41,7 +41,7 @@ let Secoes: DbSections[] = [
     },
     {
         area: 'business',
-        imageSectionUrl: 'assets/image/sections/secao-business-branco.svg',
+        imageSectionUrl: 'assets/image/sections/icon-business.svg',
         section1: 'Startups',
         section2: 'Marketing Digital',
         section3: 'Gestão',
@@ -50,7 +50,7 @@ let Secoes: DbSections[] = [
     },
     {
         area: 'programação',
-        imageSectionUrl: 'assets/image/sections/secao-programacao-branco.svg',
+        imageSectionUrl: 'assets/image/sections/icon-programacao.svg',
         section1: 'Lógica',
         section2: 'Java',
         section3: 'Python',

@@ -9,6 +9,7 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            padding-bottom: rem-calc(70);
             &__item {
                 display: flex;
                 flex-direction: row;
@@ -74,7 +75,7 @@
             }
             &__text,
             &__button {
-                font-size: rem-calc(20);
+                font-size: rem-calc(18);
             }
             &__text {
                 font-weight: 600;
