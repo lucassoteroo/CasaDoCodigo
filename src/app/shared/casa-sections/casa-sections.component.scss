@@ -1,5 +1,12 @@
 @import '../../../config-scss/rem-calc.scss';
 @import '../../../config-scss/variables.scss';
+@mixin image {
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    padding-bottom: rem-calc(5);
+}
+
 :host {
     section {
         background-color: var(--fundo-titulo-secao);
@@ -51,6 +58,7 @@
             color: var(--borda-texto);
             opacity: .9;
             font-size: rem-calc(14);
+            line-height: 1.5;
         }
         &__program {
             &:hover {
@@ -63,9 +71,7 @@
         .programacao {
             color: #00c86f;
             img {
-                width: 30px;
-                height: 30px;
-                margin-top: 25px;
+                @include image;
             }
         }
         &__mobile {
@@ -79,17 +85,13 @@
         .mobile {
             color: #ffba05;
             img {
-                width: 30px;
-                height: 30px;
-                margin-top: 25px;
+                @include image;
             }
         }
         .front-end {
             color: #6bd1ff;
             img {
-                width: 30px;
-                height: 30px;
-                margin-top: 25px;
+                @include image;
             }
         }
         &__front-end {
@@ -103,9 +105,7 @@
         .infraestrutura {
             color: #f16165;
             img {
-                width: 30px;
-                height: 30px;
-                margin-top: 25px;
+                @include image;
             }
         }
         &__infraestrutura {
@@ -119,9 +119,7 @@
         .business {
             color: #ff8c2a;
             img {
-                width: 30px;
-                height: 30px;
-                margin-top: 25px;
+                @include image;
             }
         }
         &__business {
