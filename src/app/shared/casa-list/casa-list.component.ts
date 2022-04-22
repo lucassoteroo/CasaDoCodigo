@@ -17,16 +17,21 @@ export class CasaListComponent implements OnInit {
   
   private setBooks: Db[] = []
   public getBooks: Db[] = []
-  private setSection: DbSections[] = [] 
-  public getSection: DbSections[] = []
+  private setSections: DbSections[] = []
+  public getSections: DbSections[] = []
 
-  constructor(private activatedRoute: ActivatedRoute, private bookService: DbService, private getService: DbSectionsService) { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private bookService: DbService,
+    private sectionsService: DbSectionsService
+  ) { }
 
   ngOnInit(): void {
     this.setBooks = this.bookService.retriveAll()
     this.getBooks = this.setBooks
-    this.setSection = this.getService.retriveAll()
-    this.getSection = this.setSection
+    this.setSections = this.sectionsService.retriveAll()
+    this.getSections = this.setSections
+    this.showBookSections()
   }
 
   public getSearch(value: string) {
@@ -34,5 +39,17 @@ export class CasaListComponent implements OnInit {
       return !res.title.indexOf(value.toLowerCase())
     })
     this.getBooks = filter;
+  }
+
+    public showBookSections() {
+    const area = this.activatedRoute.snapshot.params['area']
+    const element = this.setBooks
+    var elemento = []
+    for (let i = 0; i < element.length; i++) {
+      if (element[i].section == area)
+        elemento.push(element[i])
+    }
+    this.getBooks = elemento
+    console.log(this.getBooks)
   }
 }

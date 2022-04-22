@@ -6,8 +6,8 @@ import { RoutingModule } from './routing.module';
 // Pages
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
-import { SharedModule } from '../shared/shared.module';
 import { ListComponent } from './list/list.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
