@@ -13,13 +13,12 @@ export class DbSectionsService {
 
 let Secoes: DbSections[] = [
     {
-        area: 'front-end',
-        imageSectionUrl: 'assets/image/sections/icon-front-end.svg',
-        section1: 'HTML e CSS',
-        section2: 'Javascript',
-        section3: 'Todos',
-        section4: '',
-        section5: ''
+        area: 'programacao',
+        imageSectionUrl: 'assets/image/sections/icon-programacao.svg',
+        section1: 'Lógica',
+        section2: 'Java',
+        section3: 'Python',
+        section4: 'Todos',
     },
     {
         area: 'mobile',
@@ -28,7 +27,14 @@ let Secoes: DbSections[] = [
         section2: 'Android',
         section3: 'Multiplataforma',
         section4: 'Todos',
-        section5: '',
+    },
+    {
+        area: 'front-end',
+        imageSectionUrl: 'assets/image/sections/icon-front-end.svg',
+        section1: 'HTML e CSS',
+        section2: 'Javascript',
+        section3: 'Todos',
+        section4: '',
     },
     {
         area: 'infraestrutura',
@@ -37,24 +43,13 @@ let Secoes: DbSections[] = [
         section2: 'Dados',
         section3: 'Todos',
         section4: '',
-        section5: '',
     },
     {
         area: 'business',
         imageSectionUrl: 'assets/image/sections/icon-business.svg',
         section1: 'Startups',
         section2: 'Marketing Digital',
-        section3: 'Gestão',
-        section4: 'Agile',
-        section5: 'Todos',
+        section3: 'Agile',
+        section4: 'Todos',
     },
-    {
-        area: 'programação',
-        imageSectionUrl: 'assets/image/sections/icon-programacao.svg',
-        section1: 'Lógica',
-        section2: 'Java',
-        section3: 'Python',
-        section4: 'Games',
-        section5: 'Todos',
-    }
 ]

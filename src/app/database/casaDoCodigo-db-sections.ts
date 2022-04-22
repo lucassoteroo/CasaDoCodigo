@@ -5,5 +5,4 @@ export class DbSections {
     'section2': string
     'section3': string
     'section4': string
-    'section5': string
 }
