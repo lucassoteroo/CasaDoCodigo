@@ -1,11 +1,9 @@
-<!--
-    <div class="containerSecao" *ngFor="let item of getSections">
-        <img [src]="item.imageSectionUrl" alt="" class="containerSecao__image">
-        <h2 class="containerSecao__title">
-            livros de {{item.area}}
-        </h2>
-    </div>
--->
+<div class="containerSecao" *ngFor="let item of getAboutElement">
+    <img [src]="item.imageSectionUrl" alt="" class="containerSecao__image">
+    <h2 class="containerSecao__title">
+        livros de {{item.area}}
+    </h2>
+</div>
 <div class="search">
     <casa-search (emmitSearch)="getSearch($event)"></casa-search>
 </div>

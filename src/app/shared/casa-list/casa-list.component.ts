@@ -20,7 +20,7 @@ export class CasaListComponent implements OnInit {
   private setSections: DbSections[] = []
   public getSections: DbSections[] = []
 
-  public getSearchElement: any
+  public getAboutElement: any
   public getAboutSection: any
 
   constructor(
@@ -38,6 +38,7 @@ export class CasaListComponent implements OnInit {
     this.showBookSections()
     this.showBookAbout()
     this.getAbout()
+    this.aboutElement()
   }
   
   public getSearch(value: string) {
@@ -82,7 +83,18 @@ export class CasaListComponent implements OnInit {
       }
     }
     const aboutFinal = [elementoSecao[0]]
-    
     this.getAboutSection = aboutFinal  
+  }
+  
+  public aboutElement() {
+    const section = this.activatedRoute.snapshot.params['area']
+    const element = this.setSections
+    var elementoSection = []
+    for (const item of element) {
+      if (item.area == section || item.section1 == section || item.section2 == section || item.section3 == section || item.section4 == section) {
+        elementoSection.push(item)
+      }
+    }
+    this.getAboutElement = elementoSection
   }
 }
