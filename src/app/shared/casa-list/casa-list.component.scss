@@ -34,10 +34,11 @@ $padding: rem-calc(20);
             }
         }
         &__activated {
+            text-transform: uppercase;
             color: var(--secondary-color);
             padding-left: 5px;
             font: {
-                size: rem-calc(22);
+                size: rem-calc(20);
                 weight: 600;
             }
         }
