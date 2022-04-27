@@ -9,9 +9,10 @@
 <div class="search">
     <casa-search (emmitSearch)="getSearch($event)"></casa-search>
 </div>
-<section class="listagem">
-    <a class="casa" [routerLink]="['details', livro.id]" *ngFor="let livro of getBooks">
-        <div class="container">
+<section class="listagem" *ngFor="let item of getAboutSection">
+    <h3 class="listagem__title" id="item">Livros de<span class="listagem__activated">{{item}}</span></h3>
+    <a class="casa">
+        <div class="container" [routerLink]="['details', livro.id]" *ngFor="let livro of getBooks">
             <section class="casa__acesso">
                 <img [src]="livro.bigImageUrl" alt="{{livro.title}}" class="casa__image">
                 <a class="casa__btn">Comprar</a>
