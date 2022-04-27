@@ -20,7 +20,7 @@ export class CasaListComponent implements OnInit {
   private setSections: DbSections[] = []
   public getSections: DbSections[] = []
 
-  private setAboutSection: any
+  public getSearchElement: any
   public getAboutSection: any
 
   constructor(
@@ -66,6 +66,7 @@ export class CasaListComponent implements OnInit {
       if (element[i].about == about || element[i].section == about)
       elemento.push(element[i])
     }
+    this.setBooks = elemento
     this.getBooks = elemento
   }
   
