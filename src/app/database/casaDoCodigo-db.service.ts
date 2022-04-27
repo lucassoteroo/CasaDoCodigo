@@ -242,7 +242,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 13,
-        title: 'Lógica de programação com Portugol',
+        title: 'lógica de programação com portugol',
         upon: 'Mais de 80 exemplos, 55 exercícios com gabarito e vídeos complementares',
         about: 'Lógica',
         section: 'programacao',
@@ -280,7 +280,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 15,
-        title: 'Introdução à programação em C',
+        title: 'introdução à programação em c',
         upon: 'Os primeiros passos de um desenvolvedor',
         about: 'Lógica',
         section: 'programacao',
@@ -299,7 +299,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 16,
-	    title: 'Lógica de Programação',
+	    title: 'lógica de programação',
 	    upon: 'Crie seus primeiros programas usando Javascript e HTML',
 	    about: 'Lógica',
 	    section: 'programacao',
@@ -318,7 +318,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 17,
-        title: 'Java 9',
+        title: 'java 9',
         upon: 'Interativo, reativo e modularizado',
         about: 'Java',
         section: 'programacao',
@@ -336,7 +336,7 @@ let DbLivros: Db[] = [
         smallImageUrl: 'assets/image/books/Java9.png'
     }, {
        id: 18,
-       title: 'Apache Kafka e Spring Boot',
+       title: 'apache kafka e spring boot',
        upon: 'Comunicação assíncrona entre microsserviços',
        about: 'Java',
        section: 'programacao',
@@ -355,7 +355,7 @@ let DbLivros: Db[] = [
     }, 
     {
         id: 19,
-	    title: 'Back-end Java',
+	    title: 'back-end java',
 	    upon: 'Microsserviços, Spring Boot e Kubernetes',
 	    about: 'Java',
 	    section: 'programacao',
@@ -374,7 +374,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 20,
-	    title: 'Design Patterns com Java',
+	    title: 'design patterns com java',
 	    upon: 'Projeto orientado a objetos guiado por padrões',
 	    about: 'Java',
 	    section: 'programacao',
@@ -393,7 +393,7 @@ let DbLivros: Db[] = [
     }, 
     {
         id: 21,
-	    title: 'Python',
+	    title: 'python',
 	    upon: 'Escreva seus primeiros programas',
 	    about: 'Python',
 	    section: 'programacao',
@@ -412,7 +412,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 22,
-	    title: 'Trilhas Python',
+	    title: 'trilhas python',
 	    upon: 'Programação multiparadigma e desenvolvimento Web com Flask',
 	    about: 'Python',
 	    section: 'programacao',
@@ -431,7 +431,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 23,
-	    title: 'Flask de A - Z',
+	    title: 'flask de a - z',
 	    upon: 'Crie aplicações web mais completas e robustas em Python',
 	    about: 'Python',
 	    section: 'programacao',
@@ -450,7 +450,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 24,
-	    title: 'Django de A - Z',
+	    title: 'django de a - z',
 	    upon: 'Crie aplicações web rápidas, seguras e escaláveis com Python',
 	    about: 'Python',
 	    section: 'programacao',
@@ -469,7 +469,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 25,
-	    title: 'Ionic 6',
+	    title: 'ionic 6',
 	    upon: 'Desenvolvimento multiplataforma para dispositivos móveis',
 	    about: 'iOS',
 	    section: 'mobile',
@@ -488,7 +488,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 26,
-	    title: 'Xamarin Forms e MVVM',
+	    title: 'xamarin forms e MVVM',
 	    upon: 'Persistência local com Entity Framework Core',
 	    about: 'iOS',
 	    section: 'mobile',
@@ -507,7 +507,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 27,
-	    title: 'Kotlin com Android',
+	    title: 'kotlin com android',
 	    upon: 'Crie aplicativos de maneira fácil e divertida',
 	    about: 'Android',
 	    section: 'mobile',
@@ -526,7 +526,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 28,
-	    title: 'App Inventor',
+	    title: 'app inventor',
 	    upon: 'Seus primeiros aplicativos Android',
 	    about: 'Android',
 	    section: 'mobile',
@@ -545,7 +545,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 29,
-	    title: 'Entrega contínua em Android',
+	    title: 'entrega contínua em android',
 	    upon: 'Como automatizar a distribuição de apps',
 	    about: 'Android',
 	    section: 'mobile',
@@ -564,7 +564,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 30,
-	    title: 'Iniciando com Flutter Framework',
+	    title: 'iniciando com flutter framework',
 	    upon: 'Desenvolva aplicações móveis no Dart Side!',
 	    about: 'Multiplataforma',
 	    section: 'mobile',
@@ -583,7 +583,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 31,
-	    title: 'React Native',
+	    title: 'react native',
 	    upon: 'Desenvolvimento de aplicativos mobile com React',
 	    about: 'Multiplataforma',
 	    section: 'mobile',
@@ -602,7 +602,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 32,
-	    title: 'Cordova avançado e PhoneGap',
+	    title: 'cordova avançado e phoneGap',
 	    upon: 'Um guia detalhado do zero à publicação',
 	    about: 'Multiplataforma',
 	    section: 'mobile',
@@ -621,7 +621,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 33,
-	    title: 'Xamarin Forms',
+	    title: 'xamarin forms',
 	    upon: 'Desenvolvimento de aplicações móveis multiplataforma',
 	    about: 'Multiplataforma',
 	    section: 'mobile',
@@ -640,7 +640,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 34,
-	    title: 'Aplicações mobile híbridas com Cordova e PhoneGap',
+	    title: 'aplicações mobile híbridas com Cordova e PhoneGap',
 	    upon: 'Aprenda a construir apps híbridos',
 	    about: 'Multiplataforma',
 	    section: 'mobile',
@@ -659,7 +659,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 35,
-	    title: 'Roadmap back-end',
+	    title: 'roadmap back-end',
 	    upon: 'Conhecendo o protocolo HTTP e arquiteturas REST',
 	    about: 'Web',
 	    section: 'infraestrutura',
@@ -678,7 +678,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 36,
-	    title: 'Pentest em aplicações web',
+	    title: 'pentest em aplicações web',
 	    upon: 'Avalie a segurança contra ataques web com testes de invasão no Kali Linux',
 	    about: 'Web',
 	    section: 'infraestrutura',
@@ -697,7 +697,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 37,
-	    title: 'APIs REST',
+	    title: 'apis rest',
 	    upon: 'Seus serviços prontos para o mundo real',
 	    about: 'Web',
 	    section: 'infraestrutura',
@@ -716,7 +716,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 38,
-	    title: 'Desconstruindo a Web',
+	    title: 'desconstruindo a web',
 	    upon: 'As tecnologias por trás de uma requisição',
 	    about: 'Web',
 	    section: 'infraestrutura',
@@ -735,7 +735,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 39,
-	    title: 'Tuning de SQL',
+	    title: 'tuning de SQL',
 	    upon: 'Melhore a performance de suas aplicações Oracle',
 	    about: 'Dados',
 	    section: 'infraestrutura',
@@ -754,7 +754,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 40,
-	    title: 'Akka & Akka Streams',
+	    title: 'akka & akka streams',
 	    upon: 'Construa sistemas distribuídos com atores',
 	    about: 'Dados',
 	    section: 'infraestrutura',
@@ -773,7 +773,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 41,
-	    title: 'Machine Learning',
+	    title: 'machine learning',
 	    upon: 'Introdução à classificação',
 	    about: 'Dados',
 	    section: 'infraestrutura',
@@ -792,7 +792,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 42,
-	    title: 'Teoria dos Grafos',
+	    title: 'teoria dos grafos',
 	    upon: 'Uma abordagem prática em Java',
 	    about: 'Dados',
 	    section: 'infraestrutura',
@@ -811,7 +811,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 43,
-	    title: 'Criatividade e inovação',
+	    title: 'criatividade e inovação',
 	    upon: 'Entre na Era das Startups',
 	    about: 'Startups',
 	    section: 'business',
@@ -830,7 +830,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 44,
-	    title: 'Guia da Startup',
+	    title: 'guia da startup',
 	    upon: 'Como startups e empresas estabelecidas podem criar produtos de software rentáveis',
 	    about: 'Startups',
 	    section: 'business',
@@ -849,7 +849,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 45,
-	    title: 'A jornada do empreendedor',
+	    title: 'a jornada do empreendedor',
 	    upon: 'O herói da nossa Era',
 	    about: 'Startups',
 	    section: 'business',
@@ -868,7 +868,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 46,
-	    title: 'Direto ao Ponto',
+	    title: 'direto ao ponto',
 	    upon: 'Criando produtos de forma enxuta',
 	    about: 'Startups',
 	    section: 'business',
@@ -887,7 +887,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 47,
-	    title: 'Inbound Marketing',
+	    title: 'inbound marketing',
 	    upon: 'Estratégias práticas para empresas e projetos',
 	    about: 'Marketing Digital',
 	    section: 'business',
@@ -906,7 +906,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 48,
-	    title: 'Marketing de conteúdo',
+	    title: 'marketing de conteúdo',
 	    upon: 'Estratégias para entregar o que seu público quer consumir',
 	    about: 'Marketing Digital',
 	    section: 'business',
@@ -925,7 +925,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 49,
-	    title: 'SEO Prático',
+	    title: 'seo prático',
 	    upon: 'Seu site na primeira página das buscas',
 	    about: 'Marketing Digital',
 	    section: 'business',
@@ -944,7 +944,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 50,
-	    title: 'Métricas Ágeis',
+	    title: 'métricas ágeis',
 	    upon: 'Obtenha melhores resultados em sua equipe',
 	    about: 'Agile',
 	    section: 'business',
@@ -963,7 +963,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 51,
-	    title: 'Scrum 360',
+	    title: 'scrum 360',
 	    upon: 'Um guia completo e prático de agilidade',
 	    about: 'Agile',
 	    section: 'business',
@@ -982,7 +982,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 52,
-        title: 'Agile',
+        title: 'agile',
         upon: 'Desenvolvimento de software com entregas frequentes e foco no valor de negócio',
         about: 'Agile',
         section: 'business',
@@ -1001,7 +1001,7 @@ let DbLivros: Db[] = [
     },
     {
         id: 53,
-	    title: 'Lean Game Development',
+	    title: 'lean game development',
 	    upon: 'Desenvolvimento enxuto de jogos',
 	    about: 'Agile',
 	    section: 'business',
