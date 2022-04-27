@@ -27,10 +27,25 @@ $padding: rem-calc(20);
         margin: rem-calc(25) 0 rem-calc(10) 0
     }
     .listagem {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: rem-calc(30) rem-calc(90);
+        &__title {
+            font: {
+                size: rem-calc(18);
+                weight: 400;
+            }
+        }
+        &__activated {
+            color: var(--secondary-color);
+            padding-left: 5px;
+            font: {
+                size: rem-calc(22);
+                weight: 600;
+            }
+        }
         .casa {
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: rem-calc(30) rem-calc(90);
             &__acesso {
                 position: relative;
                 text-align: center;
