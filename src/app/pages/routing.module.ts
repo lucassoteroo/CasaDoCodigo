@@ -8,15 +8,20 @@ import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   },
   {
-    path: 'home/list/:area',
-    component: ListComponent
-  },
-  {
-    path: 'home/list/:area/details/:id',
+    path: 'list',
+    children: [
+      {
+        path: ':area',
+        component: ListComponent,
+      }
+    ]
+  }
+  ,{
+    path: 'details/:id',
     component: DetailsComponent
   }
 ];
