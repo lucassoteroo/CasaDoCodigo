@@ -14,17 +14,17 @@
                 <div class="prices__onShelfEbook">
                     <p class="prices__type">Ebook</p>
                     <p class="prices__price">R$ {{item.priceEbook}}</p>
-                    <a class="prices__buy">Botão</a>
+                    <a class="prices__buy" (click)="navigateButton(item.id)">Comprar</a>
                 </div>
                 <div class="prices__onShelfPrinted">
                     <p class="prices__type">Impresso</p>
                     <p class="prices__price">R$ {{item.pricePrinted}}</p>
-                    <a class="prices__buy">Botão</a>
+                    <a class="prices__buy" (click)="navigateButton(item.id)">Comprar</a>
                 </div>
                 <div class="prices__onShelfPackage">
                     <p class="prices__type">Ebook + Impresso</p>
                     <p class="prices__price">R$ {{item.pricePackage}}</p>
-                    <a class="prices__buy">Botão</a>
+                    <a class="prices__buy" (click)="navigateButton(item.id)">Comprar</a>
                 </div>
             </div>
         </div>

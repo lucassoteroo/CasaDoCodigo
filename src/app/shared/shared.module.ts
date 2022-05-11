@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu'
 import { MatButtonModule } from '@angular/material/button'
+import { MatTableModule } from '@angular/material/table';
 
 
 // Components
@@ -13,6 +14,7 @@ import { CasaFooterComponent } from './casa-footer/casa-footer.component';
 import { CasaMenuComponent } from './casa-menu/casa-menu.component';
 import { CasaReleasesComponent } from './casa-releases/casa-releases.component';
 import { CasaSectionsComponent } from './casa-sections/casa-sections.component';
+import { CasaTableComponent } from './casa-table/casa-table.component';
 
 
 
@@ -24,7 +26,8 @@ import { CasaSectionsComponent } from './casa-sections/casa-sections.component';
     CasaFooterComponent,
     CasaMenuComponent,
     CasaReleasesComponent,
-    CasaSectionsComponent
+    CasaSectionsComponent,
+    CasaTableComponent
   ],
   exports: [
     CasaHeaderComponent,
@@ -33,14 +36,15 @@ import { CasaSectionsComponent } from './casa-sections/casa-sections.component';
     CasaFooterComponent,
     CasaMenuComponent,
     CasaReleasesComponent,
-    CasaSectionsComponent
-
+    CasaSectionsComponent,
+    CasaTableComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ]
 })
 export class SharedModule { }
