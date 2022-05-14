@@ -95,3 +95,19 @@ th.mat-header-cell:first-of-type {
 tfoot.mat-table-sticky {
     display: block !important;
 }
+
+a.xng-breadcrumb-link,
+li.xng-breadcrumb-separator,
+label.xng-breadcrumb-trail {
+    color: var(--borda-secao);
+    padding-bottom: 2px;
+}
+
+a.xng-breadcrumb-link,
+label.xng-breadcrumb-trail {
+    border-bottom: 2px solid var(--borda-secao);
+}
+
+a.xng-breadcrumb-link:hover {
+    text-decoration: none;
+}

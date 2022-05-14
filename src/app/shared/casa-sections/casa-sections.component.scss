@@ -35,6 +35,9 @@
                 left: .5px solid var(--borda-secao-item);
                 right: .5px solid var(--borda-secao-item);
             }
+            &:hover {
+                cursor: pointer;
+            }
         }
         &__acess {
             display: flex;

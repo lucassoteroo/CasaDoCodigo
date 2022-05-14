@@ -1,0 +1,15 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+.content {
+    max-width: rem-calc(1200);
+    margin: 0 auto;
+    text-transform: capitalize;
+    padding: {
+        top: rem-calc(50);
+        bottom: rem-calc(25);
+    }
+    font: {
+        size: rem-calc(20);
+        weight: 900;
+    }
+}
