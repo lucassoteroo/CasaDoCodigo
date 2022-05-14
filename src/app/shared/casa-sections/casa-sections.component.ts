@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 // Service
 import { DbService } from '../../database/casaDoCodigo-db.service'
@@ -21,12 +21,21 @@ export class CasaSectionsComponent implements OnInit {
   private setSections: DbSections[] = []
   public getSections: DbSections[] = []
 
-  constructor(private activatedRoute: ActivatedRoute, private bookService: DbService , private DbSection: DbSectionsService) { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private bookService: DbService,
+    private DbSection: DbSectionsService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.setBooks = this.bookService.retriveAll()
     this.getBooks = this.setBooks
     this.setSections = this.DbSection.retriveAll()
     this.getSections = this.setSections
+  }
+
+  navigateButton(element: any) {
+    this.router.navigate([`list/${element}`])
   }
 }

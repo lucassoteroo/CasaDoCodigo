@@ -4,7 +4,7 @@
 <ul class="sections">
     <li *ngFor="let item of getSections" class="sections__program">
         <div *ngIf="item.area == 'programacao'" class="sections__item">
-            <a class="sections__acess programacao" [routerLink]="['list', item.area]">
+            <a class="sections__acess programacao" (click)="navigateButton(item.area)">
                 <img [src]="item.imageSectionUrl" alt="ícone seção programação" class="sections__image">
                 <h6 class="sections__area">Livros de
                     <p>{{item.area}}</p>
@@ -15,7 +15,7 @@
     </li>
     <li *ngFor="let item of getSections" class="sections__mobile">
         <div *ngIf="item.area == 'mobile'" class="sections__item">
-            <a class="sections__acess mobile" [routerLink]="['list', item.area]">
+            <a class="sections__acess mobile" (click)="navigateButton(item.area)">
                 <img [src]="item.imageSectionUrl" alt="ícone seção mobile" class="sections__image">
                 <h6 class="sections__area">Livros de
                     <p>{{item.area}}</p>
@@ -26,7 +26,7 @@
     </li>
     <li *ngFor="let item of getSections" class="sections__front-end">
         <div *ngIf="item.area == 'front-end'" class="sections__item">
-            <a class="sections__acess front-end" [routerLink]="['list', item.area]">
+            <a class="sections__acess front-end" (click)="navigateButton(item.area)">
                 <img [src]="item.imageSectionUrl" alt="ícone seção front-end" class="sections__image">
                 <h6 class="sections__area">Livros de
                     <p>{{item.area}}</p>
@@ -37,7 +37,7 @@
     </li>
     <li *ngFor="let item of getSections" class="sections__infraestrutura">
         <div *ngIf="item.area == 'infraestrutura'" class="sections__item">
-            <a class="sections__acess infraestrutura" [routerLink]="['list', item.area]">
+            <a class="sections__acess infraestrutura" (click)="navigateButton(item.area)">
                 <img [src]="item.imageSectionUrl" alt="ícone seção infraestrutura" class="sections__image">
                 <h6 class="sections__area">Livros de
                     <p>{{item.area}}</p>
@@ -48,7 +48,7 @@
     </li>
     <li *ngFor="let item of getSections" class="sections__business">
         <div *ngIf="item.area == 'business'" class="sections__item">
-            <a class="sections__acess business" [routerLink]="['list', item.area]">
+            <a class="sections__acess business" (click)="navigateButton(item.area)">
                 <img [src]="item.imageSectionUrl" alt="ícone seção business" class="sections__image">
                 <h6 class="sections__area">Livros de
                     <p>{{item.area}}</p>

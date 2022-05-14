@@ -1,0 +1,30 @@
+<div class="container">
+    <table mat-table [dataSource]="bookPayment" class="table">
+        <tbody>
+            <ng-container matColumnDef="bigImageUrl">
+                <th mat-header-cell *matHeaderCellDef class="table__head"></th>
+                <td mat-cell *matCellDef="let element" class="table__body">
+                    <img [src]="element.bigImageUrl" alt="" class="table__image">
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="title">
+                <th mat-header-cell *matHeaderCellDef class="table__head"> Título </th>
+                <td mat-cell *matCellDef="let element" class="table__body"> {{ element.title }}: {{ element.upon }} </td>
+            </ng-container>
+            <ng-container matColumnDef="pricePrinted">
+                <th mat-header-cell *matHeaderCellDef class="table__head"> Preço </th>
+                <td mat-cell *matCellDef="let element" class="table__body">R$ {{element.pricePrinted}} </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </tbody>
+        <!--
+            <tfoot>
+                <ng-container matColumnDef="enzo">
+                    <td>total</td>
+                </ng-container>
+                <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+            </tfoot>
+        -->
+    </table>
+</div>
