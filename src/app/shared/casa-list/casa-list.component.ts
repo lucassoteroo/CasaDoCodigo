@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router'
 
 
 // Service
@@ -26,7 +27,8 @@ export class CasaListComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private bookService: DbService,
-    private sectionsService: DbSectionsService
+    private sectionsService: DbSectionsService,
+    private router: Router
     ) { }
     
   ngOnInit(): void {
@@ -84,5 +86,10 @@ export class CasaListComponent implements OnInit {
     const aboutFinal = [elementoSecao[0]]
     
     this.getAboutSection = aboutFinal  
+  }
+
+  navigateButton(element: any) {
+    const area = this.activatedRoute.snapshot.params['area']
+    this.router.navigate([`list/${area}/${element}`])
   }
 }

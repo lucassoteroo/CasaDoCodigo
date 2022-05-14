@@ -5,50 +5,50 @@
                 <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
                 <img src="assets/image/icons/seta.svg" alt="" class="menu__seta">
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section1]">{{item.section1}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section2]">{{item.section2}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section3]">{{item.section3}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.area]">{{item.section4}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section1)">{{item.section1}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section2)">{{item.section2}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section3)">{{item.section3}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section4)">{{item.section4}}</button>
                 </mat-menu>
             </li>
             <li *ngIf="item.area == 'front-end'">
                 <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
                 <img src="assets/image/icons/seta.svg" alt="" class="menu__seta">
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section1]">{{item.section1}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section2]">{{item.section2}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section3]">{{item.section3}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.area]">{{item.section4}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section1)">{{item.section1}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section2)">{{item.section2}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section3)">{{item.section3}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section4)">{{item.section4}}</button>
                 </mat-menu>
             </li>
             <li *ngIf="item.area == 'mobile'">
                 <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
                 <img src="assets/image/icons/seta.svg" alt="" class="menu__seta">
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section1]">{{item.section1}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section2]">{{item.section2}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section3]">{{item.section3}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.area]">{{item.section4}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section1)">{{item.section1}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section2)">{{item.section2}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section3)">{{item.section3}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section4)">{{item.section4}}</button>
                 </mat-menu>
             </li>
             <li *ngIf="item.area == 'infraestrutura'">
                 <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
                 <img src="assets/image/icons/seta.svg" alt="" class="menu__seta">
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section1]">{{item.section1}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section2]">{{item.section2}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section3]">{{item.section3}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.area]">{{item.section4}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section1)">{{item.section1}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section2)">{{item.section2}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section3)">{{item.section3}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section4)">{{item.section4}}</button>
                 </mat-menu>
             </li>
             <li *ngIf="item.area == 'business'">
                 <button mat-button [matMenuTriggerFor]="menu" class="menu__area">{{item.area}}</button>
                 <img src="assets/image/icons/seta.svg" alt="" class="menu__seta">
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section1]">{{item.section1}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section2]">{{item.section2}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.section3]">{{item.section3}}</button>
-                    <button mat-menu-item class="menu__item" [routerLink]="['list', item.area]">{{item.section4}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section1)">{{item.section1}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section2)">{{item.section2}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section3)">{{item.section3}}</button>
+                    <button mat-menu-item class="menu__item" (click)="navigateButton(item.section4)">{{item.section4}}</button>
                 </mat-menu>
             </li>
         </ul>

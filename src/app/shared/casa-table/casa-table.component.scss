@@ -1,0 +1,46 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+$border: 3px solid var(--tabela-borda);
+:host {
+    .container {
+        max-width: fit-content;
+        margin: 0 auto;
+        .table {
+            width: 900px;
+            margin: {
+                top: rem-calc(30);
+                bottom: rem-calc(30);
+            }
+            border: {
+                left: $border;
+                right: $border;
+                bottom: $border;
+            }
+            &__head {
+                background-color: var(--tabela-cabecalho);
+                text-align: center;
+                vertical-align: middle;
+                color: #000;
+                border: {
+                    bottom: $border;
+                    top: $border;
+                }
+                font: {
+                    size: rem-calc(20);
+                    weight: 600
+                }
+            }
+            &__body {
+                text-align: center;
+                vertical-align: middle;
+                text-transform: capitalize;
+                padding: rem-calc(20) rem-calc(20);
+                background-color: var(--cinza-claro);
+                font-weight: 600;
+            }
+            &__image {
+                width: rem-calc(100)
+            }
+        }
+    }
+}
