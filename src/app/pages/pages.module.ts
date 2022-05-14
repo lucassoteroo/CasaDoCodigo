@@ -21,7 +21,7 @@ import { PaymentComponent } from './payment/payment.component';
   imports: [
     CommonModule,
     RoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class PagesModule { }

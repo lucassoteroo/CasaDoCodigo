@@ -89,6 +89,7 @@ export class CasaListComponent implements OnInit {
   }
 
   navigateButton(element: any) {
-    this.router.navigate([`details/${element}`])
+    const area = this.activatedRoute.snapshot.params['area']
+    this.router.navigate([`list/${area}/${element}`])
   }
 }

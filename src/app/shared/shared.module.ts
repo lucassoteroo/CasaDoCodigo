@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu'
 import { MatButtonModule } from '@angular/material/button'
 import { MatTableModule } from '@angular/material/table';
+import { BreadcrumbModule } from 'xng-breadcrumb';
+
 
 
 // Components
@@ -15,6 +17,7 @@ import { CasaMenuComponent } from './casa-menu/casa-menu.component';
 import { CasaReleasesComponent } from './casa-releases/casa-releases.component';
 import { CasaSectionsComponent } from './casa-sections/casa-sections.component';
 import { CasaTableComponent } from './casa-table/casa-table.component';
+import { CasaPathComponent } from './casa-path/casa-path.component';
 
 
 
@@ -27,7 +30,8 @@ import { CasaTableComponent } from './casa-table/casa-table.component';
     CasaMenuComponent,
     CasaReleasesComponent,
     CasaSectionsComponent,
-    CasaTableComponent
+    CasaTableComponent,
+    CasaPathComponent
   ],
   exports: [
     CasaHeaderComponent,
@@ -37,14 +41,16 @@ import { CasaTableComponent } from './casa-table/casa-table.component';
     CasaMenuComponent,
     CasaReleasesComponent,
     CasaSectionsComponent,
-    CasaTableComponent
+    CasaTableComponent,
+    CasaPathComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     MatMenuModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    BreadcrumbModule
   ]
 })
 export class SharedModule { }

@@ -29,12 +29,11 @@ export class DetailsComponent implements OnInit {
   }
 
   public getBooks() {
-    const id = this.activatedRoute.snapshot.params['id'];
-    console.log(id)
+    const id = this.activatedRoute.snapshot.params['title'];
     const element = this.setElementsBook
     var elemento = []
     for (let i = 0; i < element.length; i++) {
-      if (element[i].id == id) {
+      if (element[i].title == id) {
         elemento.push(element[i])
       }
       this.getElementsBook = elemento
