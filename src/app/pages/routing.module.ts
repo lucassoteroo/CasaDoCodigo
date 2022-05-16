@@ -34,6 +34,10 @@ const routes: Routes = [
         ]
       }
     ]
+  },
+  {
+    path: 'payment/:id',
+    component: PaymentComponent
   }
 ];
 

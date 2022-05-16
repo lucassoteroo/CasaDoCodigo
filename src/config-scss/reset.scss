@@ -105,9 +105,10 @@ label.xng-breadcrumb-trail {
 
 a.xng-breadcrumb-link,
 label.xng-breadcrumb-trail {
-    border-bottom: 2px solid var(--borda-secao);
+    border-bottom: 2px solid transparent;
 }
 
 a.xng-breadcrumb-link:hover {
     text-decoration: none;
+    border-bottom: 2px solid var(--borda-secao);
 }
