@@ -1,0 +1,22 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+:host {
+    button {
+        background-color: #EBEBEE;
+        padding: rem-calc(20) rem-calc(25);
+        border-radius: .5rem;
+        font: {
+            weight: 600;
+            size: rem-calc(18);
+        }
+        margin: {
+            left: 200px;
+            bottom: 50px;
+        }
+        &:hover {
+            background-color: #d3d3d3;
+            cursor: pointer;
+            box-shadow: .5px .5px 1px var(--texto-novidades);
+        }
+    }
+}
